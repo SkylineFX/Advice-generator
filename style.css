@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background-color: hsl(218, 23%, 16%);
+    color: hsl(193, 38%, 86%);
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 350px;
+    width: 570px;
+    border-radius: 15px;
+    background-color: hsl(217, 19%, 24%);
+}
+
+.container {
+    height: 90%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.advice-id {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 14px;
+    color: hsl(150, 100%, 66%);
+}
+
+.advice {
+    font-size: 28px;
+}
+
+.decoration {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 16px;
+    width: 100%;
+}
+
+.line-h {
+    height: 1px;
+    width: 45%;
+    background-color: hsl(217, 19%, 38%);
+}
+
+.vertical {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    gap: 7px;
+}
+
+.line-v {
+    height: 100%;
+    width: 6px;
+    background-color: hsl(193, 38%, 86%);
+    border-radius: 5px;
+}
+
+.random-btn {
+    position: absolute;
+    bottom: -25px;
+    right: 50%;
+    transform: translateX(50%);
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+}
+
+.random-btn:hover {
+    box-shadow: 0px 0px 20px 1px hsl(150, 100%, 66%);
+}
+
+.attribution { 
+    position: absolute;
+    bottom: 0;
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 576px) {
+    main {
+      width: 90%;
+    }
+
+    .number {
+        font-size: 10px;
+    }
+
+    .advice {
+        font-size: 24px;
+    }
+
+    .line-h {
+        width: 43%;
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(90);
+    }
+}
+
+.dice:focus {
+    animation-name: example;
+    animation-duration: 4s;
+    display: none;
+}
