@@ -130,9 +130,3 @@ main {
         transform: rotate(90);
     }
 }
-
-.dice:focus {
-    animation-name: example;
-    animation-duration: 4s;
-    display: none;
-}

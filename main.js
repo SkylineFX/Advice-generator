@@ -13,7 +13,3 @@ const randomize = () => {
 }
 
 randomizeBtn.addEventListener('click', randomize);
-
-randomizeBtn.addEventListener('click', () => {
-    diceImg.style.rotation('90deg');
-});
