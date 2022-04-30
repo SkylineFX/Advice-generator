@@ -8,8 +8,9 @@ const randomize = () => {
         .then(obj => obj.json())
         .then(data => {
             id.textContent = `advice #${data.slip.id}`;
-            advice.textContent = data.slip.advice;  
+            advice.textContent = `“${data.slip.advice}”`;  
         });
 }
 
+window.addEventListener('load', randomize)
 randomizeBtn.addEventListener('click', randomize);
